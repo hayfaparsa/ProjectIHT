@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV - Hayfa Parsa</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+      .container {
+        display: flex;
+        width: 100vw;
+        min-height: 100vh;
+        background: white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 0;
+        overflow: hidden;
+      }
+      .sidebar {
+        background: #1e3a5f;
+        color: white;
+        padding: 30px;
+        flex: 1;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .main-content {
+        flex: 1;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        overflow-y: auto;
+      }
+      .profile-img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 5px solid white;
+        display: block;
+        margin: 0 auto 10px;
+        object-fit: cover;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #f4a62a;
+      }
+      .student-title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: -5px;
+        margin-top: -5px;
+      }
+      .section {
+        margin-top: -10px;
+      }
+      .about-me {
+        line-height: 1.3;
+      }
+      .Motto {
+        font-weight: bold;
+        font-style: italic;
+      }
+      .skills div,
+      .language div {
+        background: #f4a62a;
+        color: white;
+        padding: 8px;
+        margin: 5px 0;
+        text-align: center;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+      .social-icons {
+        margin-top: 15px;
+      }
+      .social-icons a {
+        margin: 0 10px;
+        display: inline-block;
+      }
+      .social-icons img {
+        width: 35px;
+        height: 35px;
+        transition: transform 0.2s ease-in-out;
+      }
+      hr {
+        border: 0;
+        height: 1px;
+        background-color: #f4a62a;
+        margin: 20px 0;
+        opacity: 1;
+      }
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+          height: auto;
+        }
+        .sidebar {
+          text-align: center;
+          padding: 20px;
+        }
+      }
+      .experience-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 25px;
+      }
+
+      .year {
+        background: #1e3a5f;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 20px;
+        font-weight: bold;
+        min-width: 100px;
+        text-align: center;
+        margin-right: 15px;
+      }
+
+      .content {
+        flex: 1;
+      }
+
+      .content h3 {
+        margin: 0px;
+        font-size: 17px;
+        color: black;
+        margin-top: 7px;
+      }
+      .hidden {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+      }
+
+      .show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container hidden">
+      <div class="sidebar">
+        <img src="hayfa.jpeg" alt="Profile" class="profile-img" />
+        <h1>Hayfa Parsa</h1>
+        <p class="student-title">Mathematics Education Student</p>
+        <p>Sultan Ageng Tirtayasa University</p>
+
+        <div class="social-icons">
+          <a href="https://wa.me/6287837942923" target="_blank">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+              alt="WhatsApp"
+            />
+          </a>
+          <a href="https://www.instagram.com/hyfaaprs" target="_blank">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+              alt="Instagram"
+            />
+          </a>
+          <a href="mailto:hayfaparsa25@gmail.com">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg"
+              alt="Email"
+            />
+          </a>
+        </div>
+
+        <hr />
+
+        <div class="section hidden">
+          <h3>About Me</h3>
+          <p class="about-me">
+            I am a Mathematics Education student at Sultan Ageng Tirtayasa
+            University. I am responsible, adaptable, and able to work both
+            independently and in a team. I always strive to complete tasks with
+            accuracy and organization to achieve the best results. I am open to
+            feedback, eager to learn new things, and continuously improving
+            myself. With a strong interest in exploring new experiences,
+            self-development, learning new things, and generating ideas, I am
+            always looking for opportunities to grow both academically and
+            personally.
+          </p>
+        </div>
+
+        <hr />
+
+        <div class="section hidden">
+          <h3>Motto</h3>
+          <p class="Motto">
+            This is the very first page, not where the storyline ends
+          </p>
+        </div>
+
+        <hr />
+
+        <div class="section skills hidden">
+          <h3>Skills</h3>
+          <div>Microsoft Word</div>
+          <div>Microsoft PowerPoint</div>
+          <div>Canva</div>
+          <div>CapCut</div>
+        </div>
+
+        <hr />
+
+        <div class="section language hidden">
+          <h3>Languages</h3>
+          <div>Indonesian</div>
+          <div>English</div>
+        </div>
+      </div>
+
+      <div class="main-content hidden">
+        <div class="section">
+          <h3>Experience</h3>
+
+          <div class="experience-item">
+            <div class="year">2023 - 2024</div>
+            <div class="content">
+              <h3>Leader of the Green School Club at MAN 1 Kota Serang</h3>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="year">2023 - 2024</div>
+            <div class="content">
+              <h3>Member of Green Generation Banten</h3>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="year">2024</div>
+            <div class="content">
+              <h3>
+                Committee Member of Student Leadership Training at MAN 1 Kota
+                Serang
+              </h3>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="year">2024</div>
+            <div class="content">
+              <h3>Committee Member of Mathematics Student Gathering</h3>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="year">2025</div>
+            <div class="content">
+              <h3>
+                Committee Member of Alumni Back to School Event at MAN 1 Kota
+                Serang
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="section">
+          <h3>Award Certificate</h3>
+          <p>
+            <strong>2nd Place in the Pantun Competition</strong> - Cipocok Jaya
+            District (2017)
+          </p>
+          <p>
+            <strong>Top 3 in Class for 3 years</strong> - MAN 1 Kota Serang
+            (2021 - 2024)
+          </p>
+        </div>
+
+        <hr />
+
+        <div class="section">
+          <h3>Education</h3>
+
+          <div class="experience-item">
+            <div class="year">2010 - 2012</div>
+            <div class="content">
+              <h3>TKN Pembina Provinsi Banten</h3>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="year">2012 - 2018</div>
+            <div class="content">
+              <h3>SDIT Nur El-Qolam</h3>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="year">2018 - 2021</div>
+            <div class="content">
+              <h3>MTsN 1 Kota Serang</h3>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="year">2021 - 2024</div>
+            <div class="content">
+              <h3>MAN 1 Kota Serang</h3>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="year">2024 - Now</div>
+            <div class="content">
+              <h3>Sultan Ageng Tirtayasa University</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.querySelectorAll(".social-icons img").forEach((icon) => {
+        icon.addEventListener("mouseover", function () {
+          this.style.transform = "scale(1.2)";
+        });
+        icon.addEventListener("mouseout", function () {
+          this.style.transform = "scale(1)";
+        });
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        const elements = document.querySelectorAll(
+          ".container, .section, .experience-item, .social-icons img, .main-content"
+        );
+
+        elements.forEach((el, index) => {
+          setTimeout(() => {
+            el.classList.add("show");
+          }, index * 270);
+        });
+      });
+    </script>
+  </body>
+</html>
